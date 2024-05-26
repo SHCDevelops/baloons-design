@@ -10,7 +10,7 @@
 
 ## Технологии
 - HTML5
-- CSS3
+- CSS3 (Float - Устаревшая)
 - SASS
 - JavaScript
 
