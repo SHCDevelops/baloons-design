@@ -17,7 +17,8 @@
 ## Установка
 1. Клонируйте репозиторий:
 
-bash
+```bash
 $ git clone https://github.com/SHCDevelops/baloons-design.git
+```
 
 2. Откройте `index.html` в браузере.
