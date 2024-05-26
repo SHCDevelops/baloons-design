@@ -3,13 +3,16 @@
     padding: 0
     box-sizing: border-box
 
+html
+    font-size: 62.5%
+
 body
     font-family: 'Roboto', sans-serif
     font-weight: 400
     color: gray
-    font-size: 16px
-    letter-spacing: 2px
-    padding: 50px
+    font-size: 1.6rem
+    letter-spacing: .2rem
+    padding: 5rem
     background-color: white
     overflow-x: hidden
 
@@ -23,10 +26,10 @@ body
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%)
     &__logo
         position: absolute
-        left: 50px
-        top: 50px
-        height: 70px
-        width: 56px
+        left: 5rem
+        top: 5rem
+        height: 7rem
+        width: 5.6rem
     &__box
         position: absolute
         top: 40%
@@ -35,40 +38,41 @@ body
         width: 100%
         text-align: center
     .title-first
-        margin-bottom: 65px
+        margin-bottom: 6.5rem
 
 .title-first
     color: white
     &__main
         display: block
         font-weight: 800
-        font-size: 50px
-        line-height: 60px
-        letter-spacing: 10px
+        font-size: 5rem
+        line-height: 6rem
+        letter-spacing: 1rem
         text-transform: uppercase
-        margin-bottom: 10px
+        margin-bottom: 1rem
         animation: leftToRight 1.7s ease 1s
         backface-visibility: hidden
     &__secondary
         display: block
         font-weight: 100
-        font-size: 40px
-        line-height: 48px
-        letter-spacing: 5px
+        font-size: 4rem
+        line-height: 4.8rem
+        letter-spacing: .5rem
         animation: rightToLeft 1.7s ease 1s
         backface-visibility: hidden
 
 .btn
     &:link, &:visited
         font-weight: 500
-        font-size: 20px
-        line-height: 24px
+        font-size: 2rem
+        line-height: 2.4rem
+        letter-spacing: .5rem
         text-transform: uppercase
         text-decoration: none
         color: #777777
-        padding: 15px 40px
+        padding: 1.5rem 4rem
         background: white
-        border-radius: 50px
+        border-radius: 5rem
         display: inline-block
         transition: all .3s
         position: relative
@@ -105,7 +109,7 @@ body
 @keyframes btnToUp
     0%
         opacity: 0
-        transform: translateY(50px)
+        transform: translateY(5rem)
 
     100%
         opacity: 1
@@ -114,10 +118,10 @@ body
 @keyframes leftToRight
     0%
         opacity: 0
-        transform: translateX(-100px)
+        transform: translateX(-10rem)
 
     80%
-        transform: translateX(10px)
+        transform: translateX(1rem)
            
     100%
         opacity: 1
@@ -126,9 +130,9 @@ body
 @keyframes rightToLeft
     0%
         opacity: 0
-        transform: translateX(100px) 
+        transform: translateX(10rem) 
     80%
-        transform: translateX(-10px)
+        transform: translateX(-1rem)
     100%
         opacity: 1
         transform: translateX(0px)
