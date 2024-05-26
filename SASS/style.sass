@@ -34,6 +34,8 @@ body
         transform: translate(-50%, -50%)
         width: 100%
         text-align: center
+    .title-first
+        margin-bottom: 65px
 
 .title-first
     color: white
@@ -53,9 +55,8 @@ body
         font-size: 40px
         line-height: 48px
         letter-spacing: 5px
-        animation: rightToLeft 1.7s linear 1s
+        animation: rightToLeft 1.7s ease 1s
         backface-visibility: hidden
-        margin-bottom: 65px
 
 .btn
     &:link, &:visited
@@ -92,7 +93,23 @@ body
         left: 0
         z-index: -1
         transition: all .5s
+    &_animated
+        animation: btnToUp 1.7s ease 1s
+        animation-fill-mode: backwards
 
+
+
+
+
+
+@keyframes btnToUp
+    0%
+        opacity: 0
+        transform: translateY(50px)
+
+    100%
+        opacity: 1
+        transform: translateY(0px)
 
 @keyframes leftToRight
     0%
