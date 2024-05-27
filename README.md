@@ -1,5 +1,7 @@
 # Воздушные шары
 
+[![Просмотр дизайна](https://img.shields.io/badge/Просмотр%20дизайна-Click-blue?style=for-the-badge)](https://shcdevelops.github.io/baloons-design/)
+
 ## Описание
 Это проект вёрстки дизайна для сайта, посвящённого турам на воздушном шаре. 
 
