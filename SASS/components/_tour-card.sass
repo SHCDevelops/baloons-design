@@ -4,7 +4,7 @@
     perspective: 150rem
     -moz-perspective: 150rem
 
-    @include respond(tab-port)
+    @media only screen and (max-width: 900px), (hover:none)
         height: auto
 
     &__side
@@ -20,21 +20,21 @@
         backface-visibility: hidden
         box-shadow: $box-shadow
 
-        @include respond(tab-port)
+        @media only screen and (max-width: 900px), (hover:none)
             height: auto
             position: relative
             box-shadow: none
 
         &_front
             background: $color-white
-            @include respond(tab-port)
+            @media only screen and (max-width: 900px), (hover:none)
                 padding-bottom: 13rem
                 background: #dddddd
 
         &_back
             background: linear-gradient(120deg, $color-brown, $color-brown-dark)
             transform: rotateY(180deg)
-            @include respond(tab-port)
+            @media only screen and (max-width: 900px), (hover:none)
                 transform: rotateY(0)
                 padding: 5rem
                 padding-top: 12rem
@@ -43,7 +43,7 @@
 
     &:hover &__side_front
         transform: rotateY(-180deg)
-        @include respond(tab-port)
+        @media only screen and (max-width: 900px), (hover:none)
             transform: rotateY(0)
 
     &:hover &__side_back
@@ -53,14 +53,26 @@
         background-blend-mode: hard-light
         height: 21rem
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%)
-        @include respond(tab-port)
+        @media only screen and (max-width: 900px), (hover:none)
             height: 31rem
         &_1
             background: $color-brown url(../img/card-bg-1.png) center / cover no-repeat
+            @media (min-width: 900px)
+                background: $color-brown url(../img/card-bg-1-small.jpg) center / cover no-repeat
+            @media (min-resolution: 192dpi) and (min-width: 900px), (min-width: 1800px)
+                background: $color-brown url(../img/card-bg-1.png) center / cover no-repeat
         &_2
             background: $color-brown url(../img/card-bg-2.png) center / cover no-repeat
+            @media (min-width: 900px)
+                background: $color-brown url(../img/card-bg-2-small.jpg) center / cover no-repeat
+            @media (min-resolution: 192dpi) and (min-width: 900px), (min-width: 1800px)
+                background: $color-brown url(../img/card-bg-2.png) center / cover no-repeat
         &_3
             background: $color-brown url(../img/card-bg-3.png) center / cover no-repeat
+            @media (min-width: 900px)
+                background: $color-brown url(../img/card-bg-3-small.jpg) center / cover no-repeat
+            @media (min-resolution: 192dpi) and (min-width: 900px), (min-width: 1800px)
+                background: $color-brown url(../img/card-bg-3.png) center / cover no-repeat
     &__title
         font-weight: 200
         letter-spacing: .2rem
@@ -114,7 +126,7 @@
         top: 50%
         left: 50%
         transform: translate(-50%, -50%)
-        @include respond(tab-port)
+        @media only screen and (max-width: 900px), (hover:none)
             position: relative
             top: 0%
             left: 0%
